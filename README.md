@@ -24,8 +24,8 @@ The UNet model is a type of convolutional neural network designed for biomedical
 
 ## Training
 The model was trained using the following steps:
-1. **Data Preprocessing**: Images were resized, normalized, and augmented to improve model robustness.
-2. **Model Compilation**: The model was compiled with an appropriate optimizer, loss function, and metrics.
+1. **Data Preprocessing**: Images were resized and normalized to improve model robustness.
+2. **Model Compilation**: The model was compiled with an appropriate optimizer (Adam), loss function (Focal Cross Entropy), and metrics (accuracy and IoU).
 3. **Training**: The model was trained on the dataset with a specified number of epochs and batch size.
 
 ## Hyperparameter Tuning
@@ -34,13 +34,12 @@ Hyperparameters were tuned using grid search to find the optimal combination for
 ## Results
 The model's performance was evaluated using metrics: accuracy, and IoU (Intersection over Union). The results indicate that the model effectively segments facial wrinkles.
 
-## Usage
-To use the model for detecting facial wrinkles you need to clone the project and train the model using on of the notebooks.
-
-## Examples
-Here are some an example of the model's predictions:
+Here are an example of the model's prediction:
 
 ![wrinkle masked man](assets/result.png)
+
+## Usage
+To use the model for detecting facial wrinkles you need to clone the project and train the model using on of the notebooks.
 
 ## References
 - [`Skin-Disease-Detection`](https://github.com/gjain307/Skin-Disease-Detection/) project for the training data.
