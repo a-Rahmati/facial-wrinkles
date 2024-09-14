@@ -10,7 +10,6 @@ This project utilizes a UNet convolutional neural network for the task of semant
 - [Hyperparameter Tuning](#hyperparameter-tuning)
 - [Results](#results)
 - [Usage](#usage)
-- [Examples](#examples)
 - [References](#references)
 
 ## Introduction
@@ -25,7 +24,7 @@ The UNet model is a type of convolutional neural network designed for biomedical
 ## Training
 The model was trained using the following steps:
 1. **Data Preprocessing**: Images were resized and normalized to improve model robustness.
-2. **Model Compilation**: The model was compiled with an appropriate optimizer (Adam), loss function (Focal Cross Entropy), and metrics (accuracy and IoU).
+2. **Model Compilation**: The model was compiled with an appropriate optimizer (Adam), loss function (Focal Cross Entropy), and metrics (accuracy and IoU). <u>**Focal Cross Entropy**</u> was used to address class imbalance problem.
 3. **Training**: The model was trained on the dataset with a specified number of epochs and batch size.
 
 ## Hyperparameter Tuning
